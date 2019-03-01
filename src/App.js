@@ -19,7 +19,7 @@ class App extends Component {
     correct: null
   };
 
-  //api calling for json data
+  //fetch json data using api calling
   async componentDidMount() {
     const url = "https://opentdb.com/api.php?amount=10";
     const response = await fetch(url);
@@ -32,14 +32,13 @@ class App extends Component {
       currentQuestion.options = _.shuffle(answers);
       return currentQuestion;
     });
-    //in state we got a question along with shuffled answers.
 
     this.setState({
       questions
     });
   }
 
-  //function for the selection of answer from the options given
+  //function for selecting the answer
   setAnswer = (e) => {
     const index = e.target.name;
     const selected = [...this.state.selected];
@@ -54,7 +53,7 @@ class App extends Component {
     });
   }
 
-  //to submit the form
+  //submit form
   submit = (e) => {
     e.preventDefault();
     const {
@@ -68,7 +67,8 @@ class App extends Component {
     })
 
   }
-  //on click the result sheet we need to refresh the page and given a new set of questions
+
+  //on click restart test
   handleClick = (e) => {
     window.location.reload();
   }
@@ -79,7 +79,7 @@ class App extends Component {
       questions
     } = this.state
     const questionList = questions.map((question, index) => {
-      // console.log(question.options, question.correct_answer);
+
       return ( <
         div className = "ts-card uk-box-shadow-small"
         key = {
