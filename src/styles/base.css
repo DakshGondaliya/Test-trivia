@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Raleway|Roboto');
+
+@font-face {
+  font-family: GoogleSans-Regular;
+  src: url("../font/GoogleSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: GoogleSans-Medium;
+  src: url("../font/GoogleSans-Medium.ttf");
+}
+
+@font-face {
+  font-family: GoogleSans-Bold;
+  src: url("../font/GoogleSans-Bold.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  background-color: #f3f7f7;
+}

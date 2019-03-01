@@ -1,0 +1,124 @@
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/* .form {
+  width: 100%;
+} */
+
+.ts-card {
+  padding: 1.5em 2em;
+  width: 60%;
+  vertical-align: center;
+  margin: 1em auto;
+  background-color: #fff;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s all ease-in-out;
+}
+
+.uk-margin {
+  display: inline-flex;
+  flex-direction: column;
+  margin-bottom: -1em;
+  font-family: "Arial", sans-serif;
+}
+
+.uk-margin label {
+  margin-left: 1em;
+  color: #212121;
+}
+
+.uk-radio {
+  margin-right: 0.5em;
+  background-color: #fff;
+  border: 1.5px solid #929090;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0);
+  }
+
+  50% {
+    box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  100% {
+    box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0);
+  }
+}
+
+.uk-radio:checked {
+  margin-right: 0.4em;
+  background-color: #285fc5;
+  background-repeat: repeat;
+  border: 1.5px solid #05399a;
+  animation: ripple 0.5s linear forwards;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.question {
+  font-size: 1.1em;
+  font-family: "GoogleSans-Medium",
+    sans-serif;
+  letter-spacing: 0.3175px;
+  word-spacing: 0px;
+  margin-top: 1em;
+}
+
+.uk-button {
+  display: block;
+  margin: 2em auto;
+  text-align: center;
+  border-radius: 5px;
+  padding: 0.1em 1.25em;
+  color: #fff;
+  font-size: 16px;
+  font-family: "GoogleSans-Medium",
+    sans-serif;
+  line-height: 21px;
+  border-radius: 50px;
+  padding: 20px 50px;
+  background: #4f6df6;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 65px -13px;
+  transition: all 500ms ease-in-out 0s;
+  text-transform: none;
+  backface-visibility: hidden;
+}
+
+.uk-button:hover {
+  background: #1a2da5;
+  transform: scale(1.02);
+}
+
+.input {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .ts-card {
+    width: 80%;
+    transition: 0.3s all ease-in-out;
+  }
+
+  .uk-margin label {
+    margin-left: 0.5em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ts-card {
+    width: 75%;
+    transition: 0.3s all ease-in-out;
+  }
+
+  .uk-margin label {
+    margin-left: 0.8em;
+  }
+}
+
+.ts-loading {
+  margin: 35vh auto 0 auto;
+  color: #05399a;
+}
